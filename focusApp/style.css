@@ -1,0 +1,241 @@
+body {
+    background-color: rgba(72, 136, 0, 0.07)
+}
+
+main {
+    padding: 16px;
+    padding-bottom: 32px;
+}
+
+div.appName {
+    /* font-size: 64px; */
+    font-family: poppins;
+    color: #48A300;
+    /* font-weight: 700; */
+    text-align: center;
+}
+
+.appName h1 {
+    font-size: 64px;
+}
+
+.appName h1 span {
+    color: #61481C;
+}
+
+.appContainer {
+
+    background-color: white;
+    margin-inline: auto;
+    max-width: 660px;
+    padding: 32px 42px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.07);
+}
+
+h2.heading {
+    font-family: 'poppins';
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+
+.sun {
+    vertical-align: middle;
+    margin-left: 12px;
+}
+
+.cmt {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.458);
+    font-family: 'poppins';
+    margin-bottom: 18px;
+}
+
+.err {
+    font-family: 'poppins';
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+    margin-block: 18px;
+    opacity: 0;
+}
+.show-error{
+    opacity:1;
+}
+.bar {
+    height: 30px;
+    max-width: 550px;
+    background-color: rgba(72, 136, 0, 0.07);
+    border-radius: 15px;
+
+}
+
+.progress-val {
+    background-color:#48A300;
+    height: 100%;
+    border-radius: 15px;
+    width: 0%;
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    /* padding: 0 16px; */
+    
+    transition: width .5s ease-in-out;
+}
+.text-value{
+    padding-left:20px ;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'poppins';
+    color: #c9c9c9;
+    position :absolute
+}
+.one-third .progress-val{
+    width: 33.33%;
+}
+
+.two-third .progress-val{
+    width: 66.66%;
+}
+
+.three-third .progress-val{
+    width: 100%;
+}
+
+
+.goal-container {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 17px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    background-color: #ffffff;
+    margin-bottom: 42px;
+}
+
+.custom-checkbox {
+    height: 24px;
+    width: 24px;
+    border: 2px solid rgba(98, 72, 28, 0.3);
+    border-radius: 50%;
+    flex-shrink: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.completed .custom-checkbox{
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #48A300;
+    background-color: #48A300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.check-icon{
+   display: none;
+}
+.completed .custom-checkbox .check-icon{
+    display: block;
+}
+
+.goal-input::placeholder {
+    color: rgba(182, 182, 182, 0.636);
+
+}
+
+.goal-input {
+    padding-left: 22px;
+    font-size: 16px;
+    font-family: 'poppins';
+    border: none;
+    flex-grow: 1;
+    align-self: stretch;
+    color: black;
+    font-weight: 500;
+    font-family: 'poppins';
+}
+.completed .goal-input{
+    text-decoration: line-through;
+    color: #48A300;
+}
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.btn{
+    border: 2px solid #48A300;
+    border-radius: 5px;
+    height: 50px;
+    width:100px ;
+    color: #ffffff;
+    background-color: #48A300;
+    font-family: 'poppins';
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.salutation {
+    font-weight: 400;
+    text-align: center;
+    font-family: 'poppins';
+
+}
+
+.made-with {
+    font-size: 10px;
+    font-family: 'poppins';
+    font-weight: 500;
+    color: rgba(182, 182, 182, 0.636);
+    text-align: center;
+    margin-top: 64px;
+}
+
+@media (max-width:600px) {
+    .appName h1 {
+        font-size: 32px;
+    }
+
+    .appContainer {
+        padding: 16px 32px;
+    }
+
+    .goal-container {
+        height: 64px;
+        margin-bottom: 24px;
+        border-radius: 12px;
+    }
+
+    .custom-checkbox {
+        height: 20px;
+        width: 20px;
+
+    }
+
+    h2.heading {
+        font-size: 28px;
+    }
+
+    .salutation {
+        font-size: 13px;
+    }
+
+    .made-with {
+        margin-top: 28px;
+    }
+    .goal-input{
+        padding-left: 9px;
+    }
+}
